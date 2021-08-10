@@ -2,7 +2,7 @@
     "env": {
         "es2020": true,
         "node": true,
-				"jest": true
+        "jest": true
     },
     "extends": [
         "airbnb-base",
@@ -17,11 +17,12 @@
     },
     "plugins": [
         "@typescript-eslint",
-        "eslint-plugin-import-helpers",
-        "prettier"
+        "prettier",
+        "eslint-plugin-import-helpers"
     ],
     "rules": {
         "camelcase": "off",
+        "prettier/prettier": "error",
         "import/no-unresolved": "error",
         "@typescript-eslint/naming-convention": [
             "error",
@@ -59,8 +60,7 @@
         "import/no-extraneous-dependencies": [
             "error",
             { "devDependencies": ["**/*.spec.js"] }
-        ],
-        "prettier/prettier": "error"
+        ]
     },
     "settings": {
         "import/resolver": {

@@ -9,7 +9,7 @@ interface IUsersRepository {
         password,
         driver_license,
     }: ICreateUserDTO): Promise<void>;
-    findByName(name: string): Promise<User>;
+    findByEmail(email: string): Promise<User>;
 }
 
 export { IUsersRepository };
